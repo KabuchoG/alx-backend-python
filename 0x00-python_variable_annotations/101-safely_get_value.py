@@ -6,8 +6,8 @@ from typing import TypeVar
 T = TypeVar('T')
 
 
-def safely_get_value(dct: dict[str, T], key: str,
-    default: T | None = None) -> T | None:
+def safely_get_value(dct: dict[str, T],
+                    key: str, default: T | None = None) -> T | None:
     """
     Returns the value associated with the specified
     key in a dictionary, or a default value if the key is not found.

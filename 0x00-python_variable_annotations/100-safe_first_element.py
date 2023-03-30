@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
 """Python annotations"""
-from typing import List, Any
+from typing import  Optional
 
 
-def safe_first_element(lst: List[Any]) -> Any:
+def safe_first_element(lst: list) -> Optional[object]:
     """
     Returns the first element of a list if it exists, otherwise returns None.
 

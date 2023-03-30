@@ -1,31 +1,15 @@
 #!/usr/bin/env python3
 """Python annotations"""
 
-from typing import TypeVar
-
-T = TypeVar('T')
+from typing import TypeVar, Dict, Any
 
 
-def safely_get_value(dct: dict[str, T],
-                    key: str, default: T | None = None) -> T | None:
-    """
-    Returns the value associated with the specified
-    key in a dictionary, or a default value if the key is not found.
+K = TypeVar('K')  # Type variable for key
+V = TypeVar('V')  # Type variable for value
 
-    Args:
-    dct: A dictionary with keys of type str and
-    values of type T.
-    key: A string representing the key to look up
-    in the dictionary.
-    default: An optional value of type T that is returned if the key is not
-    found in the dictionary.
-    Defaults to None.
 
-    Returns:
-    The value associated with the specified key in the dictionary,
-    or the default value
-    if the key is not found.
-    """
+def safely_get_value(dct: Dict[K, V], key: K, default: Any = None) -> V:
+    """Returns the value of the key in the dictionary"""
     if key in dct:
         return dct[key]
     else:

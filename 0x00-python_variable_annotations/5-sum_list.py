@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
+"""Python annotations - sum list"""
 from typing import List
-
-"""Python annotations"""
 
 
 def sum_list(input_list: List[float]) -> float:

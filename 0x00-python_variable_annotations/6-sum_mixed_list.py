@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Python annotations - mixed list"""
+"""Python annotations - sum mixed list"""
+from typing import List, Union
 
 
-def sum_mixed_list(mxd_lst: list[int | float]) -> float:
+def sum_mixed_list(mxd_lst: List[int | float]) -> float:
     """
     Returns the sum of the mixed list values
     """

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Python annotations"""
 
+
 def element_length(lst: list[str]) -> list[tuple[str, int]]:
     """
     Return corresponding types

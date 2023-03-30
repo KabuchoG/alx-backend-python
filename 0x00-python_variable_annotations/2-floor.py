@@ -12,9 +12,9 @@ def floor(n: float) -> int:
         n: A float to be floored.
 
     Returns:
-        An integer representing the largest integer less than or equal to the input float.
+        An integer representing the
+        largest integer less than or equal to the input float.
 
     """
 
     return math.floor(n)
-

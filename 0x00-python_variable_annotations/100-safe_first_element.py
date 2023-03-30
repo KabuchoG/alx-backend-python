@@ -3,6 +3,7 @@
 """Python annotations"""
 from typing import Any
 
+
 def safe_first_element(lst: list[Any]) -> Any | None:
     """
     Returns the first element of a list if it exists, otherwise returns None.

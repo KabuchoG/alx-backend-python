@@ -2,6 +2,7 @@
 
 """Python annotations"""
 
+
 def sum_list(input_list: list[float]) -> float:
     """
     sums up all the input values in the input list

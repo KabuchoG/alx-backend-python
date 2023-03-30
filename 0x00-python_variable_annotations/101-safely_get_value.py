@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
-"""Python annotations"""
 
-from typing import TypeVar, Dict, Any
+"""Python annotations - safely get value"""
+from typing import TypeVar, Dict, Optional
 
-
-K = TypeVar('K')  # Type variable for key
-V = TypeVar('V')  # Type variable for value
+T = TypeVar('T')
 
 
-def safely_get_value(dct: Dict[K, V], key: K, default: Any = None) -> V:
-    """Returns the value of the key in the dictionary"""
+def safely_get_value(dct: Dict[str, T], key: str, default: Optional[T] = None) -> Optional[T]:
+    """
+    safely get value from dict
+    """
     if key in dct:
         return dct[key]
     else:

@@ -4,7 +4,7 @@
 
 def to_kv(k: str, v: int | float) -> tuple[str, float]:
     """
-    Returns a tuple with string k as the first element and the square of 
+    Returns a tuple with string k as the first element and the square of
     int/float v as the second element.
 
     Args:
@@ -12,7 +12,7 @@ def to_kv(k: str, v: int | float) -> tuple[str, float]:
     v: An integer or a float.
 
     Returns:
-    A tuple with string k as the first element and the square of int/float 
+    A tuple with string k as the first element and the square of int/float
     v as the second element.
     """
     return k, float(v**2)

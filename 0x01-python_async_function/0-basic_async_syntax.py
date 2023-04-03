@@ -5,6 +5,7 @@ Write an asynchronous coroutine that takes in an integer argument (max_delay, wi
 import asyncio
 import random
 
+
 async def wait_random(max_delay=10):
     """
     return the random value

@@ -12,7 +12,7 @@ task_wait_random = __import__('3-tasks').task_wait_random
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-async def task_wait_n(n: int, max_delay: int) -> List[float):
+async def task_wait_n(n: int, max_delay: int) -> List[float]:
     """return a list of all the delays"""
     delays_list = await asyncio.gather(
         *tuple(map(lambda _: task_wait_random(max_delay), range(n))))
